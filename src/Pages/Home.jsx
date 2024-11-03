@@ -1,7 +1,16 @@
+import Banner from "../Components/Banner";
+
 const Home = () => {
   return (
     <div>
-      <p className="text-center text-4xl">Home page</p>
+      {/* Banner */}
+      <Banner></Banner>
+
+      {/* Heading */}
+
+      {/* categories tab section */}
+
+      {/* dynamic nested components */}
     </div>
   );
 };
