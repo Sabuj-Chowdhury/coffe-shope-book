@@ -25,5 +25,11 @@ const addFavorite = (coffee) => {
 };
 
 // remove coffee from local storage
+const removeFavorites = (id) => {
+  const favorites = getAllFavorite();
+  const remaining = favorites.filter((coffee) => coffee.id != id);
+  localStorage.setItem("favorites", JSON.stringify(remaining));
+  toast.success("Successfully Removed!");
+};
 
-export { addFavorite, getAllFavorite };
+export { addFavorite, getAllFavorite, removeFavorites };
